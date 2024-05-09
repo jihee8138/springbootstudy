@@ -14,7 +14,7 @@ public class MyFileUtils {
   
   // 업로드 경로 반환
   public String getUploadPath() {
-    return "/upload" + DateTimeFormatter.ofPattern("/yyyy/MM/dd").format(TODAY);
+    return "c:/upload" + DateTimeFormatter.ofPattern("/yyyy/MM/dd").format(TODAY);
   }
   
   // 저장될 파일명 반환
@@ -30,7 +30,7 @@ public class MyFileUtils {
   
   // 임시 파일 경로 반환
   public String getTempPath() {
-    return "/temporary";
+    return "c:/temporary";
   }
   
   // 임시 파일 이름 반환 (확장자 제외)
@@ -40,12 +40,12 @@ public class MyFileUtils {
   
   // 블로그 작성시 사용된 이미지가 저장될 경로 반환하기
   public String getBlogImageUploadPath() {
-    return "/blog" + DateTimeFormatter.ofPattern("/yyyy/MM/dd").format(TODAY);
+    return "c:/blog" + DateTimeFormatter.ofPattern("/yyyy/MM/dd").format(TODAY);
   }
   
   // 블로그 이미지가 저장된 어제 경로를 반환
   public String getBlogImageUploadPathInYesterday() {
-    return "/blog" + DateTimeFormatter.ofPattern("/yyyy/MM/dd").format(TODAY.minusDays(1));
+    return "c:/blog" + DateTimeFormatter.ofPattern("/yyyy/MM/dd").format(TODAY.minusDays(1));
   }
   
 }
